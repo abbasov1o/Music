@@ -53,8 +53,8 @@ try:
 	    filename = 'users.json'
 	    userid = str(message.chat.id)
 	    try:
-		if (data[userid]["basewebsite"]) == "yt":
-		    data[userid] = {"format" : "mp4", "basewebsite": "yt"}
+		if (data[userid]["basewebsite"]) == "ytm":
+		    data[userid] = {"format" : "mp4", "basewebsite": "ytm"}
 		elif (data[userid]["basewebsite"]) == "ytm":
 		    data[userid] = {"format" : "mp4", "basewebsite": "ytm"}
 		WritetoJSONFile('./',filename, data)
