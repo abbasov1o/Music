@@ -53,10 +53,10 @@ try:
 	    filename = 'users.json'
 	    userid = str(message.chat.id)
 	    try:
-		if (data[userid]["basewebsite"]) == "ytm":
-		    data[userid] = {"format" : "mp4", "basewebsite": "ytm"}
-		elif (data[userid]["basewebsite"]) == "ytm":
-		    data[userid] = {"format" : "mp4", "basewebsite": "ytm"}
+		if (data[userid]["basewebsite"]) == "mp4":
+		    data[userid] = {"format" : "mp4", "basewebsite": "mp4"}
+		elif (data[userid]["basewebsite"]) == "mp4":
+		    data[userid] = {"format" : "mp4", "basewebsite": "mp4"}
 		WritetoJSONFile('./',filename, data)
 	    except:
 		data[userid] = {"format" : "mp4", "basewebsite": "ytm"}
@@ -73,10 +73,10 @@ try:
 		if (data[userid]["basewebsite"]) == "yt":
 		    data[userid] = {"format" : "mp3", "basewebsite": "yt"}
 		elif (data[userid]["basewebsite"]) == "ytm":
-		    data[userid] = {"format" : "mp3", "basewebsite": "ytm"}
+		    data[userid] = {"format" : "mp3", "basewebsite": "yt"}
 		WritetoJSONFile('./',filename, data)
 	    except:
-		data[userid] = {"format" : "mp3", "basewebsite": "ytm"}
+		data[userid] = {"format" : "mp3", "basewebsite": "yt"}
 		WritetoJSONFile('./',filename, data)
 
 	    bot.reply_to(message, "⚠️ I prossimi file verranno scaricati in formato mp3! ⚠️")
